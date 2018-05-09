@@ -99,7 +99,7 @@ def load_file(file_name):
 
 
 def main():
-    file_name = 'hightemp.txt'
+    file_name = '../hightemp.txt'
     n = 5
 
     # 実行しないものは適宜コメント化

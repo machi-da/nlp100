@@ -75,7 +75,6 @@ def knock25(file_name):
         if m:
             dic[m.group(1)] = m.group(2)
 
-    # 確認用
     for k, v in sorted(dic.items()):
         print('{}: {}'.format(k, v))
 
@@ -110,7 +109,6 @@ def knock26_27_28(file_name):
         if m:
             dic[m.group(1)] = remove_markup(m.group(2))
 
-    # 確認用
     for k, v in sorted(dic.items()):
         print('{}: {}'.format(k, v))
 
@@ -148,8 +146,8 @@ def load_json(file_name):
 
 
 def maint():
-    gz_file_name = 'jawiki-country.json.gz'
-    json_file_name = 'uk.json'
+    gz_file_name = '../jawiki-country.json.gz'
+    json_file_name = '../uk.json'
 
     # 実行しないものは適宜コメント化
     knock20(gz_file_name, json_file_name)
