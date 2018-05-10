@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def knock30(file_name):
-    res = []
+    doc = []
     sentence = []
     text = load_file(file_name)
     for t in text:
@@ -20,12 +20,12 @@ def knock30(file_name):
             }
             sentence.append(dic)
         else:
-            res.append(sentence)
+            doc.append(sentence)
             sentence = []
     # 確認用
     # for sentence in sentences[:3]:
     #     print(sentence)
-    return res
+    return doc
 
 
 def knock31(file_name):

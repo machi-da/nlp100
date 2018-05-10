@@ -145,7 +145,7 @@ def load_json(file_name):
     return data
 
 
-def maint():
+def main():
     gz_file_name = '../jawiki-country.json.gz'
     json_file_name = '../uk.json'
 
@@ -161,4 +161,4 @@ def maint():
 
 
 if __name__ == '__main__':
-    maint()
+    main()
